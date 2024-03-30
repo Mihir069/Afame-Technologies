@@ -7,6 +7,7 @@
 }
 body {
     background-color: #272727;
+    font-family: 'Helvetica Neue', sans-serif;
 }
 a {
     text-decoration: none;
@@ -39,3 +40,46 @@ a {
     height: 1px;
     background-color: #fff;
 }
+
+.profile-img {
+    flex: 1;
+}
+
+.profile-text {
+    flex: 1;
+}
+
+.profile-img img {
+    max-width: 60%;
+    height: auto;
+    border-radius: 20px;
+}
+span {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 13%;
+    width: auto;
+    height: 2px;
+    background-color: #ef1818;
+}
+.text-title{
+    text-align: center;
+}
+.text-title h1{
+    font-size: 40px;
+}
+.text-body{
+    text-align: justify;
+}
+.text-body p{
+    font-size: 28px;
+}
+.fade-in{
+    opacity: 0;
+    transition: opacity 1s ease;
+}
+.fade-in.active{
+    opacity: 1;
+}
+
