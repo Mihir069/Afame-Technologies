@@ -1,4 +1,3 @@
-
 * {
     color: #ffffff;
     margin: 0;
@@ -38,7 +37,7 @@ a {
 .menu li:hover::after {
     width: 100%;
     height: 1px;
-    background-color: #fff;
+    background-color: #ff0000;
 }
 
 .profile-img {
@@ -47,20 +46,68 @@ a {
 
 .profile-text {
     flex: 1;
+    background-color:  #65646449;
+    border-radius: 20px;
 }
 
 .profile-img img {
-    max-width: 60%;
+    max-width: 100%;
     height: auto;
     border-radius: 20px;
 }
 span {
     content: "";
     position: absolute;
-    left: 0;
-    top: 13%;
+    left: 45px;
+    top: 0%;
     width: auto;
+    font-size: 20px;
     height: 2px;
+    background-color: #ef1818;
+}
+span.line-1{
+    content: "";
+    position: absolute;
+    left: 41%;
+    top: 70%;
+    width: 18%;
+    height: 1px;
+    background-color: #ef1818;
+}
+span.line-2{
+    content: "";
+    position: absolute;
+    left: 41%;
+    top: 72%;
+    width: 15%;
+    height: 1px;
+    background-color: #ef1818;
+}
+span.line-3{
+    content: "";
+    position: absolute;
+    left: 41%;
+    top: 74%;
+    width: 13%;
+    height: 1px;
+    background-color: #ef1818;
+}
+span.line-4{
+    content: "";
+    position: absolute;
+    left: 41%;
+    top: 76%;
+    width: 10%;
+    height: 1px;
+    background-color: #ef1818;
+}
+span.line-5{
+    content: "";
+    position: absolute;
+    left: 41%;
+    top: 78%;
+    width: 8%;
+    height: 1px;
     background-color: #ef1818;
 }
 .text-title{
@@ -68,12 +115,19 @@ span {
 }
 .text-title h1{
     font-size: 40px;
+    font-weight:900;
+}
+strong{
+    color: #ef1818;
 }
 .text-body{
-    text-align: justify;
+    float: right;
+    position: relative;
+    top:20%;
 }
 .text-body p{
-    font-size: 28px;
+    font-size: 27px;
+    font-weight:700;
 }
 .fade-in{
     opacity: 0;
@@ -82,4 +136,23 @@ span {
 .fade-in.active{
     opacity: 1;
 }
-
+.scroll-content{
+    font-size: 20px;
+    position: relative;
+    left:50%;
+    top: 50px;
+}
+.scroll-button{
+    border: 2px solid red;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 1s ease;
+}
+.scroll-button:hover{
+    background-color: #f90f0f46;
+    cursor: pointer;
+}
