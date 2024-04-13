@@ -15,7 +15,7 @@ const App = () => {
     }
     return (
         <div>
-            <div className=" fixed w-full z-10 my-5 opacity-80">
+            <div className=" fixed w-full z-10 opacity-80">
                 <Navbar />
             </div>
             <Home scroll={scroll} />
