@@ -15,18 +15,17 @@ const Home = ({ scroll }) => {
                         <h1>Welcome</h1>
                     </div>
                     <div className="text-4xl sm:text-5xl md:text-6xl font-semibold mb-4">
-                        <h1>Hi! I'm <span className="text-[#38B6FF]">Mihir</span> Kumar</h1>
+                        <h1>Hi! I'm <span className="text-[#38B6FF]">Mihir</span> Kumar Sah</h1>
                     </div>
                     <div className="p-3 bg-[#38b6ff58] rounded-xl mb-4 text-lg sm:text-2xl md:text-3xl font-semibold text-[#09517a] border-2 border-[#38B6FF]">
                         <h1>Web Developer</h1>
                     </div>
-
-                </div>
-                <div className="absolute bottom-10 left-1/2">
-                    <div className="flex justify-center cursor-pointer p-6 rounded-full border border-[#38B6FF] hover:bg-[#38b6ff58] animate-bounce" onClick={scroll}>
-                        <img src="./svg/arrow-down-solid.svg" alt="arrow-down" className="w-5 " />
+                    <div className="absolute -bottom-28 left-[40%]">
+                        <div className="flex justify-center cursor-pointer p-6 rounded-full border border-[#38B6FF] hover:bg-[#38b6ff58] animate-bounce" onClick={scroll}>
+                            <img src="./svg/arrow-down-solid.svg" alt="arrow-down" className="w-5 " />
+                        </div>
                     </div>
-                </div>
+                </div>   
             </div>
         </>
     );

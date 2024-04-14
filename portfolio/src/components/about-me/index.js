@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import "../../style.css";
+import ProgressBar from '../progress-bar';
 
 const AboutMe = () => {
     const [isVisible, setIsVisible] = useState(false);
