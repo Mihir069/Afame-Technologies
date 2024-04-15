@@ -1,20 +1,19 @@
 import React, { useState, useEffect } from 'react';
 import "../../style.css";
-import ProgressBar from '../progress-bar';
 
 const AboutMe = () => {
     const [isVisible, setIsVisible] = useState(false);
 
     useEffect(() => {
         const handleScroll = () => {
-            const currentOffset = window.pageYOffset;
             const aboutMeSection = document.getElementById('aboutMe');
 
             if (aboutMeSection) {
                 const sectionTop = aboutMeSection.offsetTop;
                 const sectionHeight = aboutMeSection.offsetHeight;
+                const currentOffset = window.pageYOffset + window.innerHeight;
 
-                if (currentOffset > sectionTop - window.innerHeight + sectionHeight / 2) {
+                if (currentOffset > sectionTop + sectionHeight / 2) {
                     setIsVisible(true);
                 }
             }
@@ -27,15 +26,15 @@ const AboutMe = () => {
     }, []);
 
     return (
-        <div id="aboutMe" className='mt-10 mb-10 flex flex-col items-center'>
-            <div className={`shadow-2xl shadow-gray-900 border lg:w-1/5 mb-6 ${isVisible ? 'fade-in-right' : 'opacity-0'}`}>
+        <div id="aboutMe" className='mt-36 mb-10 flex flex-col items-center'>
+            <div className={`shadow-2xl shadow-gray-900 border lg:w-56 mb-6 ${isVisible ? 'fade-in-right' : 'opacity-0'}`}>
                 <img
                     src="./svg/myimg.png"
                     alt="my-img"
-                    className="h-auto w-full"
+                    className={`relative h-auto w-56`}
                 />
             </div>
-            <div className={`w-full text-center ${isVisible ? 'fade-in-left' : 'opacity-0'}`}>
+            <div className={` text-center ${isVisible ? 'fade-in-left' : 'opacity-0'}`}>
                 <h1 className="text-3xl font-bold">Mihir Kumar Sah</h1>
                 <h2 className="text-xl text-[#38B6FF] mb-4">Web Developer</h2>
                 <p className="text-gray-800 px-4">
@@ -50,7 +49,7 @@ const AboutMe = () => {
                     </ul>
                 </div>
                 <div className="mt-6">
-                    <a href="./svg/my-Resume.pdf" download="my-Resume.pdf" className="bg-[#38B6FF] hover:bg-[#3867ff] text-white font-bold py-2 px-4 rounded">
+                    <a href="./svg/my-Resume.pdf" download="my-Resume.pdf" className="btn border-2 border-blue-500 hover:bg-[#38b6ff7e]  text-[#3e57c7] font-bold py-2 px-4 rounded-xl transition duration-200 ease-out">
                         Download Resume
                     </a>
                 </div>
