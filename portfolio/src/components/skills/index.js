@@ -27,7 +27,7 @@ const Skills = () => {
     const skills = [
         {
             id: 1,
-            name: 'Html&CSS',
+            name: 'ReactJS',
             percentage: 90
         },
         {
@@ -37,7 +37,7 @@ const Skills = () => {
         },
         {
             id: 3,
-            name: 'ReactJS',
+            name: 'Html&CSS',
             percentage: 80
         },
         {

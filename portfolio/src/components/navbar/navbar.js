@@ -15,7 +15,7 @@ const Navbar = () => {
         },
         {
             id: 2,
-            text: 'About me',
+            text: 'About me'
         },
         {
             id: 3,
