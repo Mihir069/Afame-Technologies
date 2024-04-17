@@ -86,6 +86,7 @@ const Skills = () => {
                     </div>
                 ))}
             </div>
+            <hr class={`w-1/2 h-1 mx-auto my-4 bg-blue-900 border-0 rounded md:my-10  ${isVisible ? 'fade-in-up' : 'opacity-0'}`}/>
         </div>
 
     );

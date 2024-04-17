@@ -26,7 +26,7 @@ const AboutMe = () => {
     }, []);
 
     return (
-        <div id="aboutMe" className='mt-36 mb-10 flex flex-col items-center'>
+        <div id="aboutMe" className='mt-36 flex flex-col items-center'>
             <div className={`shadow-2xl shadow-gray-900 border lg:w-56 mb-6 ${isVisible ? 'fade-in-right' : 'opacity-0'}`}>
                 <img
                     src="./svg/myimg.png"
@@ -54,6 +54,7 @@ const AboutMe = () => {
                     </a>
                 </div>
             </div>
+            <hr class={`w-1/2 h-1 mx-auto mt-10 bg-blue-900 border-0 rounded md:my-10${isVisible ? 'fade-in-left' : 'opacity-0'}`}/>
         </div>
     );
 };
