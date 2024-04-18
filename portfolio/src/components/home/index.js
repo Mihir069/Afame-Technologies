@@ -3,6 +3,7 @@
 const Home = ({ scroll }) => {
 
     return (
+
         <>
             <div className="relative h-screen">
                 <img

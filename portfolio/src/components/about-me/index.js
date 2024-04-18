@@ -44,7 +44,7 @@ const AboutMe = () => {
                     <ul className="list-disc list-inside text-gray-700 text-left max-w-xs">
                         <li><span className='font-bold'>From:</span> Delhi, India</li>
                         <li><span className='font-bold'>Lives in:</span> Delhi, India</li>
-                        <li><span className='font-bold'>Age:</span> 20</li>
+                        <li><span className='font-bold'>Age:</span> 19</li>
                         <li><span className='font-bold'>Gender:</span> Male</li>
                     </ul>
                 </div>

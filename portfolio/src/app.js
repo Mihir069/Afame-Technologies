@@ -4,6 +4,8 @@ import Home from "./components/home";
 import Navbar from "./components/navbar/navbar";
 import Skills from "./components/skills";
 import Project from "./components/projects";
+import Footer from "./components/footer";
+import { BrowserRouter } from "react-router-dom";
 
 const App = () => {
     const nextSection = useRef(null);
@@ -16,7 +18,7 @@ const App = () => {
         }
     }
     return (
-        <div>
+        <BrowserRouter>
             <div className=" fixed w-full z-10 opacity-80">
                 <Navbar />
             </div>
@@ -26,7 +28,8 @@ const App = () => {
             </div>
             <Skills/>
             <Project/>
-        </div>
+            <Footer/>
+        </BrowserRouter>
     )
 }
 export default App;

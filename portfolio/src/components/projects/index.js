@@ -1,41 +1,43 @@
 import { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 
 const Project = () => {
     const [selectedProject, setSelectedProject] = useState(null);
     const [isVisible, setIsVisible] = useState(false);
 
     const projects = [
+
         {
             id: 1,
+            name: 'Multi-step login form',
+            description: 'Multiple login form',
+            href: 'https://idyllic-arithmetic-a8f8e2.netlify.app',
+            imageSrc: './svg/multiple-login-form.png',
+            imageAlt: 'Multi-step-login-form',
+        },
+        {
+            id: 2,
+            name: 'Restaurant landing page',
+            description: 'Landing Page for Restaurant',
+            href: 'https://mihir069.github.io/Restourant/',
+            imageSrc: './svg/restaurant.png',
+            imageAlt: 'restaurant-page',
+        },
+        {
+            id: 3,
             name: 'ECom',
             description: 'An online shopping portal',
-            href: '#',
+            href: 'https://superb-croquembouche-d8b13f.netlify.app',
             imageSrc: './svg/e-com-project.png',
             imageAlt: 'e-com',
         },
         {
-            id: 2,
+            id: 4,
             name: 'Movie Theatre',
             description: 'Discover movies',
             href: '#',
             imageSrc: './svg/movie-theatre-project.png',
             imageAlt: 'Movie-Theatre',
-        },
-        {
-            id: 3,
-            name: 'Multi-step login form',
-            description: 'Multiple login form',
-            href: '#',
-            imageSrc: './svg/multiple-login-form.png',
-            imageAlt: 'Multi-step-login-form',
-        },
-        {
-            id: 4,
-            name: 'Restaurant landing page',
-            description: 'Landing Page for Restaurant',
-            href: '#',
-            imageSrc: './svg/restaurant.png',
-            imageAlt: 'restaurant-page',
         },
     ];
 
@@ -72,12 +74,12 @@ const Project = () => {
 
     return (
 
-            <div id="projectSection" className="mx-auto max-w-2xl px-4 py-16 sm:px-6 sm:py-24 lg:max-w-7xl lg:px-8">
+            <div id="projectSection" className="mx-auto max-w-2xl px-4  sm:px-6 sm:py-20 lg:max-w-7xl lg:px-8">
                 <div className={`text-center mt-10 text-5xl m-10 ${isVisible ? 'fade-in-left' : 'opacity-0'}`}>
                     <h1>My Works</h1>
                 </div>
 
-                <div className="mt-6 grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-4 xl:gap-x-8">
+                <div className="mt-6 grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-4 xl:gap-x-8 py-10">
                     {projects.map((item) => (
                         <div
                             key={item.id}
@@ -123,11 +125,14 @@ const Project = () => {
                                     />
                                 </svg>
                             </button>
+                            <Link to={projects.find((project) => project.id === selectedProject).href}>
                             <img
                                 src={projects.find((project) => project.id === selectedProject).imageSrc}
                                 alt="Project Detail"
-                                className="w-full h-auto rounded-lg mb-4"
+                                className="w-full h-auto rounded-lg mb-4 cursor-pointer"
                             />
+                            </Link>
+
                             <h3 className="text-xl font-bold text-blue-700">
                                 {projects.find((project) => project.id === selectedProject).name}
                             </h3>

@@ -117,7 +117,7 @@ const Skills = () => {
                                 </div>
                                 <div className='flex-1 min-w-0'>
                                     <p className='text-sm text-gray-600 truncate'>
-                                        Under the SkillForge E-learning
+                                        Under the SkillForge
                                     </p>
                                     <p className='text-sm text-gray-500'>
                                         Feb 2024 - Mar 2024
@@ -129,7 +129,7 @@ const Skills = () => {
                     </ul>
                 </div>
             </div>
-            <hr className={`w-1/2 h-1 mx-auto my-4 bg-blue-900 border-0 rounded md:my-10  ${isVisible ? 'fade-in-up' : 'opacity-0'}`} />
+            <hr className={`w-1/2 h-1 mx-auto  bg-blue-900 border-0 rounded   ${isVisible ? 'fade-in-up' : 'opacity-0'}`} />
         </div>
 
     );
