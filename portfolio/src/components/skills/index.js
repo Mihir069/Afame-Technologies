@@ -87,7 +87,7 @@ const Skills = () => {
                 ))}
             </div>
             <div className='grid grid-cols-1 sm:grid-cols-2 gap-4 w-11/12 mx-auto justify-items-center my-10'>
-                <div className='max-w-md bg-white divide-y divide-gray-200 p-4 rounded-md shadow-md'>
+                <div className={`max-w-md bg-white divide-y divide-gray-200 p-4 rounded-md shadow-md ${isVisible ? 'fade-in-size' : 'opacity-0'}`}>
                     <h1 className='text-lg font-bold mb-4'>Education</h1>
                     <ul className='divide-y divide-gray-200'>
                         <li className='py-2'>
@@ -107,7 +107,7 @@ const Skills = () => {
                         </li>
                     </ul>
                 </div>
-                <div className='max-w-md bg-white divide-y divide-gray-200 p-4 rounded-md shadow-md'>
+                <div className={`max-w-md bg-white divide-y divide-gray-200 p-4 rounded-md shadow-md ${isVisible ? 'fade-in-size' : 'opacity-0'}`}>
                     <h1 className='text-lg font-bold mb-4'>Experience</h1>
                     <ul className='divide-y divide-gray-200'>
                         <li className='py-2'>

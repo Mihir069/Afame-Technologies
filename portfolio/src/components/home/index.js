@@ -6,7 +6,7 @@ const Home = ({ scroll }) => {
         <>
             <div className="relative h-screen">
                 <img
-                    src="./svg/pexels-background.png"
+                    src="./svg/pexels-background.jpg"
                     alt="bg"
                     className="absolute inset-0 object-cover w-full h-full opacity-80"
                 />
