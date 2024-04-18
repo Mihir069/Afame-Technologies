@@ -2,28 +2,28 @@ import React, { useEffect, useState } from 'react';
 import ProgressBar from '../progress-bar';
 
 const Skills = () => {
-    const [isVisible,setIsVisible] = useState(false);
+    const [isVisible, setIsVisible] = useState(false);
 
-    useEffect(()=>{
-        const handleScroll = () =>{
+    useEffect(() => {
+        const handleScroll = () => {
             const currentOffset = window.pageYOffset;
             const skillSection = document.getElementById('skills')
-    
-            if(skillSection){
+
+            if (skillSection) {
                 const sectionTop = skillSection.offsetTop;
                 const sectionHeight = skillSection.offsetHeight;
-    
-                if(currentOffset>sectionTop-window.innerHeight + sectionHeight/3){
+
+                if (currentOffset > sectionTop - window.innerHeight + sectionHeight / 3) {
                     setIsVisible(true)
                 }
             }
         }
-        window.addEventListener('scroll',handleScroll);
-        return()=>{
+        window.addEventListener('scroll', handleScroll);
+        return () => {
             window.removeEventListener('scroll', handleScroll);
         }
 
-    },[])
+    }, [])
     const skills = [
         {
             id: 1,
@@ -86,7 +86,50 @@ const Skills = () => {
                     </div>
                 ))}
             </div>
-            <hr class={`w-1/2 h-1 mx-auto my-4 bg-blue-900 border-0 rounded md:my-10  ${isVisible ? 'fade-in-up' : 'opacity-0'}`}/>
+            <div className='grid grid-cols-1 sm:grid-cols-2 gap-4 w-11/12 mx-auto justify-items-center my-10'>
+                <div className='max-w-md bg-white divide-y divide-gray-200 p-4 rounded-md shadow-md'>
+                    <h1 className='text-lg font-bold mb-4'>Education</h1>
+                    <ul className='divide-y divide-gray-200'>
+                        <li className='py-2'>
+                            <div className='flex flex-col sm:flex-row items-start sm:items-center space-y-2 sm:space-y-0 sm:space-x-4 rtl:space-x-reverse'>
+                                <div className='flex-shrink-0 sm:text-lg text-gray-800 font-medium'>
+                                    BSc H Computer Science
+                                </div>
+                                <div className='flex-1 min-w-0'>
+                                    <p className='text-sm text-gray-600 truncate'>
+                                        University of Delhi
+                                    </p>
+                                    <p className='text-sm text-gray-500'>
+                                        2021-2024
+                                    </p>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div className='max-w-md bg-white divide-y divide-gray-200 p-4 rounded-md shadow-md'>
+                    <h1 className='text-lg font-bold mb-4'>Experience</h1>
+                    <ul className='divide-y divide-gray-200'>
+                        <li className='py-2'>
+                            <div className='flex flex-col sm:flex-row items-start sm:items-center space-y-2 sm:space-y-0 sm:space-x-4 rtl:space-x-reverse'>
+                                <div className='flex-shrink-0 sm:text-lg text-gray-800 font-medium'>
+                                    Web Development Internship
+                                </div>
+                                <div className='flex-1 min-w-0'>
+                                    <p className='text-sm text-gray-600 truncate'>
+                                        Under the SkillForge E-learning
+                                    </p>
+                                    <p className='text-sm text-gray-500'>
+                                        Feb 2024 - Mar 2024
+                                    </p>
+                                </div>
+                            </div>
+                        </li>
+                       
+                    </ul>
+                </div>
+            </div>
+            <hr className={`w-1/2 h-1 mx-auto my-4 bg-blue-900 border-0 rounded md:my-10  ${isVisible ? 'fade-in-up' : 'opacity-0'}`} />
         </div>
 
     );

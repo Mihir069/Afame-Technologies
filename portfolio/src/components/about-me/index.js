@@ -54,7 +54,7 @@ const AboutMe = () => {
                     </a>
                 </div>
             </div>
-            <hr class={`w-1/2 h-1 mx-auto mt-10 bg-blue-900 border-0 rounded md:my-10${isVisible ? 'fade-in-left' : 'opacity-0'}`}/>
+            <hr className={`w-1/2 h-1 mx-auto mt-10 bg-blue-900 border-0 rounded md:my-10${isVisible ? 'fade-in-left' : 'opacity-0'}`}/>
         </div>
     );
 };
