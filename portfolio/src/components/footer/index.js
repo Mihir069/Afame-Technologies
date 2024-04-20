@@ -7,7 +7,6 @@ const Footer = () => {
             <div className="mx-auto w-full max-w-screen-xl">
                 <div className="flex justify-center">
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 px-4 py-6 lg:py-8">
-                        {/* Where to find me */}
                         <div className="text-center md:text-left">
                             <h2 className="mb-4 text-sm font-semibold text-gray-900 uppercase dark:text-white">Where to find me</h2>
                             <div className="text-gray-500 dark:text-gray-400 font-medium">
@@ -15,7 +14,6 @@ const Footer = () => {
                             </div>
                         </div>
 
-                        {/* Follow me */}
                         <div className="text-center md:text-left">
                             <h2 className="mb-4 text-sm font-semibold text-gray-900 uppercase dark:text-white">Follow me</h2>
                             <ul className="text-gray-500 dark:text-gray-400 font-medium">
@@ -33,8 +31,6 @@ const Footer = () => {
                                 </li>
                             </ul>
                         </div>
-
-                        {/* Contact me */}
                         <div className="text-center md:text-left">
                             <h2 className="mb-4 text-sm font-semibold text-gray-900 uppercase dark:text-white">Contact me</h2>
                             <ul className="text-gray-500 dark:text-gray-400 font-medium">
